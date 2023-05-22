@@ -41,7 +41,7 @@ export default function Page() {
           {userData.map((user) => (
             <tr className="bg-teal-800 border-b" key={user.id}>
               <th>
-                <Link href="/users">{user.id}</Link>
+                <Link href={"/users/" + user.id}>{user.id}</Link>
               </th>
               <td>{user.name}</td>
               <td>{user.gender}</td>
