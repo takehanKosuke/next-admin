@@ -2,17 +2,13 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="bg-rose-500">
-      <nav className="p-2">
+    <header className="">
+      <nav className="bg-gray-800 fixed w-full z-20">
         <ul className="flex items-center space-x-2">
           <li>
-            <img src="/vercel.svg" className="w-32" />
-          </li>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/users">ユーザー一覧</Link>
+            <Link href="/">
+              <h1 className="text-3xl font-bold">Sincere</h1>
+            </Link>
           </li>
         </ul>
       </nav>
